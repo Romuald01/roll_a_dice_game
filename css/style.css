@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-div,
+.current-div,
+.reset-game-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.player-heading {
+  font-size: 56px;
+}
+.score {
+  font-size: 48px;
+  margin-top: 20px;
+}
+.current-div-box {
+  display: block;
+  color: #fff;
+  background-color: #c7365f;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 36px;
+  margin-top: 130px;
+}
+.btn {
+  /* position: absolute; */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.dice-img {
+  width: 100px;
+  border-radius: 5px;
+}
+.roll-hold-dice-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ********************MEIA QUERY********************* */
+@media screen and (max-width: 767px) {
+  .game-div {
+    display: flex !important;
+  }
+  .player-heading {
+    color: #fff !important;
+  }
+  .reset-game-div .btn--new {
+    /* border: 3px solid yellow;
+    height: 300px;
+    width: 100%; */
+  }
+  .current-div-box {
+    display: none;
+  }
+}
