@@ -100,11 +100,7 @@ body {
   .player-heading {
     color: #fff !important;
   }
-  .reset-game-div .btn--new {
-    /* border: 3px solid yellow;
-    height: 300px;
-    width: 100%; */
-  }
+
   .current-div-box {
     display: none;
   }
