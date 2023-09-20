@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
     <!-- <link rel="stylesheet" href="css/bootstrap-grid.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Roll a dice</title>
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="row game-div">
-        <div class="col-md-5 player player--1 player--active">
+        <div class="player player--1 player--active">
           <h2 class="player-heading">player 1</h2>
           <p class="score" id="score--0">0</p>
           <div class="row current-div">
@@ -26,10 +26,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2 dice-box">
+        <div class="dice-box">
           <img src="images/dice-1.png" alt="the-dice-image" class="dice-img" />
         </div>
-        <div class="col-md-5 player player--1">
+        <div class="player player--1">
           <h2 class="player-heading">player 2</h2>
           <p class="score" id="score--0">0</p>
           <div class="row current-div">
@@ -41,10 +41,9 @@
         </div>
       </div>
       <div class="row roll-hold-dice-div">
-        <div class="col-md-12">
-          <button class="btn btn--roll">🎲Roll Dice</button>
-          <button class="btn btn--new">📥Hold</button>
-        </div>
+        <button class="btn btn--roll">🎲Roll Dice</button>
+        <br />
+        <button class="btn btn--new">📥Hold</button>
       </div>
     </div>
   </body>
