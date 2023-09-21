@@ -37,6 +37,7 @@ body {
 .score {
   font-size: 48px;
   margin-top: -20px;
+  color: #c7365f;
 }
 .current-div-box {
   display: block;
@@ -46,7 +47,7 @@ body {
   border-radius: 5px;
   padding: 5px;
   font-size: 36px;
-  margin-top: 130px;
+  margin-top: 100px;
   border: 1px solid black;
 }
 .current-label {
@@ -149,31 +150,51 @@ body {
 .hidden {
   display: none;
 }
+.score-heading {
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
 /* ********************MEIA QUERY********************* */
 @media screen and (max-width: 768px) {
   .btn {
     padding: 0.5rem 1rem;
     font-size: 18px;
   }
+  .player-heading {
+    /* border: 1px solid black; */
+    /* padding: 3px; */
+    /* width: 100px; */
+  }
 }
 @media screen and (max-width: 425px) {
   .player {
-    padding: 40px;
+    /* margin-top: 30px; */
   }
   .player-heading {
-    font-size: 24px;
+    margin-top: 50px;
     font-weight: 700;
+    font-size: 24px;
+    /* border: 1px solid black; */
   }
   .btn {
-    padding: 0.3rem 0.5rem;
-    font-size: 10px;
+    /* padding: 0.3rem 0.5rem;
+    font-size: 10px; */
   }
   .btn--new {
-    margin-top: 200px;
+    margin-top: 180px;
+  }
+  .btn--hold,
+  .btn--roll {
+    display: none;
   }
   .btn--hold {
     margin-left: 60px;
     margin-top: -130px;
+  }
+  .current-div {
+    margin-top: -50px;
   }
   .current-label {
     font-size: 24px;
@@ -190,7 +211,7 @@ body {
   .player {
     padding: 45px;
   }
-  .player-heading {
+  .player-heaing {
     font-size: 6px;
   }
 
