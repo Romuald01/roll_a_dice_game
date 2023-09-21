@@ -25,21 +25,32 @@ body {
   text-align: center;
 }
 .player-heading {
-  font-size: 56px;
+  font-size: 36px;
+  padding: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.player {
+  padding: 30px;
 }
 .score {
   font-size: 48px;
-  margin-top: 20px;
+  margin-top: -20px;
 }
 .current-div-box {
   display: block;
   color: #fff;
   background-color: #c7365f;
-  width: 200px;
+  width: 100px;
   border-radius: 5px;
   padding: 5px;
   font-size: 36px;
   margin-top: 130px;
+  border: 1px solid black;
+}
+.current-label {
+  font-size: 24px;
 }
 .btn {
   /* position: absolute; */
@@ -59,9 +70,32 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
 
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.dice-box {
+  position: absolute;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.roll-hold-dice-div .btn--roll {
+  position: absolute;
+  margin-right: 30px;
+  margin-top: -250px;
+}
+.btn--new {
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 100px;
+}
+.btn--hold {
+  margin-top: -105px;
+  margin-left: 110px;
 }
 .btn:active {
   transform: translate(-50%, 3px);
@@ -91,7 +125,82 @@ body {
   align-items: center;
   text-align: center;
 }
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
 
+.player--active .current {
+  opacity: 1;
+}
 /* ********************MEIA QUERY********************* */
-/* @media screen and (max-width: 767px) {
-} */
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .player {
+    padding: 40px;
+  }
+  .player-heading {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 10px;
+  }
+  .btn--new {
+    margin-top: 200px;
+  }
+  .btn--hold {
+    margin-left: 60px;
+    margin-top: -130px;
+  }
+  .current-label {
+    font-size: 24px;
+  }
+  .dice-img {
+    width: 50px;
+    height: 50px;
+  }
+  .score {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .player {
+    padding: 45px;
+  }
+  .player-heading {
+    font-size: 6px;
+  }
+
+  .current-div-box {
+    width: 80px;
+  }
+  .current-label {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 12px;
+  }
+  .btn--hold {
+    margin-left: 70px;
+    margin-top: -130px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .player {
+    padding: 48px;
+  }
+}
+
+/* End of media query */
