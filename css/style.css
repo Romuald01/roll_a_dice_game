@@ -15,6 +15,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+.win-message {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  display: none;
+}
 
 .game-div,
 .current-div,
@@ -177,7 +184,7 @@ body {
   }
   .btn--hold,
   .btn--roll {
-    display: none;
+    /* display: none; */
   }
   .btn--hold {
     margin-left: 60px;
@@ -190,8 +197,8 @@ body {
     font-size: 24px;
   }
   .dice-img {
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
   }
   .score {
     font-size: 36px;
